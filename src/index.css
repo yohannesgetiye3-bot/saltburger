@@ -21,7 +21,16 @@ body {
   font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
   overscroll-behavior-y: none;
 }
-
+/* Hide Bolt.new watermark badge */
+iframe[src*="bolt.new"], 
+div[class*="bolt-badge"], 
+div[class*="watermark"],
+a[href*="bolt.new"] {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
 * {
   -webkit-tap-highlight-color: transparent;
 }
